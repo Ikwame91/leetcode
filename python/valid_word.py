@@ -7,8 +7,10 @@ class Solution(object):
         hasconsonant = False
 
         for character in word:
+            ## Check for invalid characters
             if not character.isalnum():
                 return False
+            ## Check for vowels and consonants
             if character.isalpha():
                 if character in vowels:
                     hasvowel = True
